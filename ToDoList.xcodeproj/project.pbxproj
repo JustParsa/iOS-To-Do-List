@@ -14,6 +14,8 @@
 		421DF9A41B1AACD700F8BFDE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 421DF9A31B1AACD700F8BFDE /* Images.xcassets */; };
 		421DF9A71B1AACD700F8BFDE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 421DF9A51B1AACD700F8BFDE /* LaunchScreen.xib */; };
 		421DF9B31B1AACD700F8BFDE /* ToDoListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 421DF9B21B1AACD700F8BFDE /* ToDoListTests.m */; };
+		426C7B691B1CFFC000CDB9EB /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426C7B681B1CFFC000CDB9EB /* AddToDoItemViewController.m */; };
+		426C7B6D1B1D00AC00CDB9EB /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 426C7B6C1B1D00AC00CDB9EB /* ToDoListTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		421DF9AC1B1AACD700F8BFDE /* ToDoListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		421DF9B11B1AACD700F8BFDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421DF9B21B1AACD700F8BFDE /* ToDoListTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListTests.m; sourceTree = "<group>"; };
+		426C7B671B1CFFC000CDB9EB /* AddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddToDoItemViewController.h; sourceTree = "<group>"; };
+		426C7B681B1CFFC000CDB9EB /* AddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddToDoItemViewController.m; sourceTree = "<group>"; };
+		426C7B6B1B1D00AC00CDB9EB /* ToDoListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoListTableViewController.h; sourceTree = "<group>"; };
+		426C7B6C1B1D00AC00CDB9EB /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +87,7 @@
 		421DF9951B1AACD700F8BFDE /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
+				426C7B6A1B1D004600CDB9EB /* View Controllers */,
 				421DF99A1B1AACD700F8BFDE /* AppDelegate.h */,
 				421DF99B1B1AACD700F8BFDE /* AppDelegate.m */,
 				421DF99D1B1AACD700F8BFDE /* ViewController.h */,
@@ -117,6 +124,17 @@
 				421DF9B11B1AACD700F8BFDE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		426C7B6A1B1D004600CDB9EB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				426C7B671B1CFFC000CDB9EB /* AddToDoItemViewController.h */,
+				426C7B681B1CFFC000CDB9EB /* AddToDoItemViewController.m */,
+				426C7B6B1B1D00AC00CDB9EB /* ToDoListTableViewController.h */,
+				426C7B6C1B1D00AC00CDB9EB /* ToDoListTableViewController.m */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +240,8 @@
 				421DF99F1B1AACD700F8BFDE /* ViewController.m in Sources */,
 				421DF99C1B1AACD700F8BFDE /* AppDelegate.m in Sources */,
 				421DF9991B1AACD700F8BFDE /* main.m in Sources */,
+				426C7B6D1B1D00AC00CDB9EB /* ToDoListTableViewController.m in Sources */,
+				426C7B691B1CFFC000CDB9EB /* AddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +434,7 @@
 				421DF9B81B1AACD700F8BFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		421DF9B91B1AACD700F8BFDE /* Build configuration list for PBXNativeTarget "ToDoListTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +443,7 @@
 				421DF9BB1B1AACD700F8BFDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
