@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>5D01690D-BB18-4629-BDAA-88D72187B570</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>ToDoList</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>C31A21B1EB608650B705719A5104FDE57E244C09</key>
 		<string>github.com:Outlier7/iOS-To-Do-List.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>ToDoList.xcodeproj/project.xcworkspace</string>
+	<string>ToDoList.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>C31A21B1EB608650B705719A5104FDE57E244C09</key>
