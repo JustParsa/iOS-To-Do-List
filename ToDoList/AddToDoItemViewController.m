@@ -10,6 +10,7 @@
 @interface AddToDoItemViewController()
 @property (weak, nonatomic) IBOutlet UITextField *textField;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *cancelButton;
 
 @end
 
@@ -18,24 +19,26 @@
 
 -(void)viewDidLoad{
     [super viewDidLoad];
+    [self.saveButton setAction:@selector(btnPressed:)];
+    [self.cancelButton setAction:@selector(btnPressed:)];
+    
 }
 
 -(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
 }
 
-#pragma mark - Navigation
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    if (sender != self.saveButton) return;
+-(void)btnPressed: (id) sender{
+    if (sender != self.saveButton) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
     
     if (self.textField.text.length > 0){
         self.toDoItem = [[ToDoItem alloc]init];
         self.toDoItem.itemName = self.textField.text;
         self.toDoItem.completed = NO;
-        
+        [self dismissViewControllerAnimated:YES completion:nil];
     }
-    
 }
 
 
